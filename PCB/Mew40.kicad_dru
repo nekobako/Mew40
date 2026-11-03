@@ -1,0 +1,18 @@
+(version 1)
+
+(rule "Power track and via"
+  (condition "A.NetClass == 'Power'")
+  (constraint track_width (min 0.5mm) (max 0.5mm))
+  (constraint via_diameter (min 0.8mm) (max 0.8mm))
+)
+
+(rule "Signal track and via"
+  (condition "A.NetClass != 'Power'")
+  (constraint track_width (min 0.25mm) (max 0.25mm))
+  (constraint via_diameter (min 0.6mm) (max 0.6mm))
+)
+
+(rule "Short track segment"
+  (condition "A.Type == 'Track'")
+  (constraint track_segment_length (min 0.2mm))
+)

@@ -1,0 +1,30 @@
+.VPHero .image-container {
+  transform: none;
+}
+
+.VPHero .image-src {
+  max-width: 20rem;
+  max-height: 20rem;
+}
+
+@media (min-width: 40rem) {
+  .VPHero .image-container {
+    transform: none;
+  }
+
+  .VPHero .image-src {
+    max-width: 24rem;
+    max-height: 24rem;
+  }
+}
+
+@media (min-width: 60rem) {
+  .VPHero .image-container {
+    transform: none;
+  }
+
+  .VPHero .image-src {
+    max-width: 28rem;
+    max-height: 28rem;
+  }
+}
